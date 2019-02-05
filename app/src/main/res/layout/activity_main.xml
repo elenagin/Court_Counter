@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2599c4"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/left_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toStartOf="@id/right_side"
+            android:layout_toLeftOf="@id/right_side"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/textLeftTeam"
+                android:textColor="#0f162b"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pointsLeftSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/pointsLeft"
+                android:textSize="100sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsLeftButton1"
+                android:text="@string/pointsButton1" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsLeftButton2"
+                android:text="@string/pointsButton2" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsLeftButton3"
+                android:text="@string/pointsButton3" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/right_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/textRightTeam"
+                android:textColor="#0f162b"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pointsRightSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/pointsRight"
+                android:textSize="100sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsRightButton1"
+                android:text="@string/pointsButton1" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsRightButton2"
+                android:text="@string/pointsButton2" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="pointsRightButton3"
+                android:text="@string/pointsButton3" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/left_side"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="#d35f00"
+            android:onClick="resetButton"
+            android:text="@string/resetButton" />
+
+
+    </RelativeLayout>
+</ScrollView>
