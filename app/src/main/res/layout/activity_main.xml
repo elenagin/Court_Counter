@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentBottom="true"
-    tools:context=".MainActivity"
-    android:background="#2599c4">
+    android:background="#2599c4"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,6 +20,8 @@
             android:id="@+id/left_side"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
             android:orientation="vertical">
 
 
@@ -66,9 +68,44 @@
                 android:onClick="pointsLeftButton3"
                 android:text="@string/pointsButton3" />
 
+            <TextView
+                android:id="@+id/foulsLeftSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/foulsLeft"
+                android:textSize="100sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="foulsLeft"
+                android:text="@string/foulButton" />
+
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="550dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="44dp"
+            android:layout_toEndOf="@id/left_side"
+            android:layout_toRightOf="@id/left_side"
+            android:background="#0f162b"
+            android:padding="10dp" />
 
         <LinearLayout
             android:id="@+id/right_side"
@@ -76,6 +113,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toEndOf="@id/line"
+            android:layout_toRightOf="@id/line"
             android:orientation="vertical">
 
 
@@ -122,16 +163,34 @@
                 android:onClick="pointsRightButton3"
                 android:text="@string/pointsButton3" />
 
+            <TextView
+                android:id="@+id/foulsRightSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/foulsRight"
+                android:textSize="100sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#db7a2b"
+                android:onClick="foulsRight"
+                android:text="@string/foulButton" />
+
         </LinearLayout>
 
         <Button
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/left_side"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
-            android:background="#d35f00"
+            android:background="#c6510d"
             android:onClick="resetButton"
             android:text="@string/resetButton" />
 
